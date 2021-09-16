@@ -4,11 +4,14 @@ public class HelloWorld{
         (String []args){
         int A=5;
         int B=5;
-        int C=5;
-        int D;
+        int C=A*B;
+        int D=A+B;
+        //A and B are the terms that would be placed after the addition/subtraction symbols
+        //For example, (x+6)(x+5) A would be 6 and B would be 5
         
-        
-        System.out.println("x^2"+A+"+"+);
-        System.out.println();
+        System.out.println("After FOIL is performed, this would result in:"+"x^2"+"+"+A+"x"+"+"+B+"x"+"+"+C);
+        //FOIL completion
+        System.out.println("Finally, this would be:"+"x^2"+"+"+D+"x"+"+"+C);
+        //Addition of like terms for a final answer
         }
 }
