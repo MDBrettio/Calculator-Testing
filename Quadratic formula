@@ -1,1 +1,24 @@
+public class Calculator2{
 
+public static void main(String[] args)   
+
+int a = 4
+int b = 5
+int c = 67
+int d = 8
+int e = 23
+int f = 5
+int g = 8
+
+
+System.out.println()
+
+
+
+
+
+
+
+
+
+}
