@@ -2,7 +2,7 @@ public class Calculator2{
 
 public static void main(String[] args){   
 
-int a = 8;
+int a = -8;
 //Literally just variable a
 
 int b = 12;
@@ -26,12 +26,13 @@ int g = a*c;
 int h = g*-4;
 //Provides the "-4" aspect of "-4ac" and finishes the equation
 
-int i = f-h;
+int i = f+h;
 //subtracts -4ac from b^2 to finish the equation and prepare it for squaring
 
 double j = Math.sqrt(i);
 //Finds the square root of i, which is b^2-4ac
 
+System.out.println(e+)
 System.out.println("["+e+"+-"+"√("+f+h+")]/"+d);
 System.out.println("["+e+"+-"+"√"+i+"]/"+d);
 System.out.println("["+e+"+-"+j+"]/"+d);
