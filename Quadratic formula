@@ -4,35 +4,25 @@ public static void main(String[] args){
 
 int a = -8;
 //Literally just variable a
-
 int b = 12;
 //Literally just variable b
-
 int c = 8;
 //Literally just variable c
-
 int d = a*2;
 //Extra variable
-
 int e = b*-1;
 //Provides the opposite of variable b
-
 int f = b*b;
 //Provides the square of b. Multiplies b by b to get b^2
-
 int g = a*c;
 //Provides a*c of the statement "-4ac"
-
 int h = g*-4;
 //Provides the "-4" aspect of "-4ac" and finishes the equation
-
 int i = f+h;
 //subtracts -4ac from b^2 to finish the equation and prepare it for squaring
-
 double j = Math.sqrt(i);
 //Finds the square root of i, which is b^2-4ac
-
-System.out.println(e+)
+System.out.println("{"+e+"+-"+"√["+f+"-4"+"("+a+")*"+"("+c+")]}/"+d);
 System.out.println("["+e+"+-"+"√("+f+h+")]/"+d);
 System.out.println("["+e+"+-"+"√"+i+"]/"+d);
 System.out.println("["+e+"+-"+j+"]/"+d);
