@@ -1,0 +1,26 @@
+public class Calculator2{
+
+public static void main(String[] args){   
+
+double a = 11;
+
+double b = 9;
+
+double x = a/b;
+
+if (a > b){
+    System.out.println("A is greater than b");
+}
+if(b > a){
+    System.out.println("B is greater than A");
+}
+if (a == b){
+    System.out.println("A is equal to B");
+}
+if(x == (int)x){
+ System.out.println("x is an integer");
+}else{
+    System.out.println("x is not an integer");
+    }
+  }
+}
