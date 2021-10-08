@@ -2,7 +2,7 @@ public class Calculator2{
 
 public static void main(String[] args){   
 
-int a = -8;
+int a = -9;
 //Literally just variable a
 int b = 12;
 //Literally just variable b
@@ -22,11 +22,16 @@ int i = f+h;
 //subtracts -4ac from b^2 to finish the equation and prepare it for squaring
 double j = Math.sqrt(i);
 //Finds the square root of i, which is b^2-4ac
-System.out.println("{"+e+"+-"+"√["+f+"-4"+"("+a+")*"+"("+c+")]}/"+d);
-System.out.println("["+e+"+-"+"√("+f+h+")]/"+d);
-System.out.println("["+e+"+-"+"√"+i+"]/"+d);
-System.out.println("["+e+"+-"+j+"]/"+d);
-System.out.println("("+e+"+"+j+")/"+d);
-System.out.println("("+e+"-"+j+")/"+d);
+System.out.println("{"+e+"+-"+"sqrt["+f+"-4"+"("+a+")*"+"("+c+")]}/"+d);
+System.out.println("["+e+"+-"+"sqrt("+f+"+"+
+"{"+h+"})]/"+d);
+System.out.println("["+e+"+-"+"sqrt("+i+")]/"+d);
+if(j % 2 == 0){
+    System.out.println("["+e+"+-"+j+"]/"+d);
+    System.out.println("("+e+"+"+j+")/"+d);
+    System.out.println("("+e+"-"+j+")/"+d);
+}else{
+    System.out.println("AAAAAAA TEST");
+}
   }
 }
