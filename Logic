@@ -24,3 +24,17 @@ if(x == (int)x){
     }
   }
 }
+
+public class Calculator2{
+
+public static void main(String[] args){   
+
+double i = 11.2;
+
+if(i % 2 == 0){
+    System.out.println("This number can be divided evenly");
+}else{
+    System.out.println("this number cannot be divided evenly");
+}
+}
+}
