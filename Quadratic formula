@@ -22,6 +22,42 @@ int i = f+h;
 //subtracts -4ac from b^2 to finish the equation and prepare it for squaring
 double j = Math.sqrt(i);
 //Finds the square root of i, which is b^2-4ac
+
+double divisor1=1;
+double divisor2=2;
+double divisor3=3;
+divisor4=4;
+int divisor5=5;
+int divisor6=6;
+int divisor7=7;
+int divisor8=8;
+int divisor9=9;
+int divisor10=10;
+
+int division1=i/divisor1;
+int division2=i/divisor2;
+int division3=i/divisor3;
+int division4=i/divisor4;
+int division5=i/divisor5;
+int division6=i/divisor6;
+int division7=i/divisor7;
+int division8=i/divisor8;
+int division9=i/divisor9;
+int division10=i/divisor10;
+System.out.println(division1+"(1) "+division2+"(2) "+division3+"(3) "+division4+"(4) "+division5+"(5) "+division6+"(6) "+division7+"(7) "+division8+"(8) "+division9+"(9) "+division10+"(10)");
+
+int square1=Math.sqrt(division1);
+int square2=Math.sqrt(division2);
+int square3=Math.sqrt(division3);
+int square4=Math.sqrt(division4);
+int square5=Math.sqrt(division5);
+int square6=Math.sqrt(division6);
+int square7=Math.sqrt(division7);
+int square8=Math.sqrt(division8);
+int square9=Math.sqrt(division9);
+int square10=Math.sqrt(division10);
+System.out.println(square1+square2+square3+square4+square5+square6+square7+square8+square9+square10);
+
 System.out.println("{"+e+"+-"+"sqrt["+f+"-4"+"("+a+")*"+"("+c+")]}/"+d);
 System.out.println("["+e+"+-"+"sqrt("+f+"+"+
 "{"+h+"})]/"+d);
