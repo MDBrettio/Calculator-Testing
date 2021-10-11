@@ -33,6 +33,10 @@ double divisor7=49;
 double divisor8=64;
 double divisor9=81;
 double divisor10=100;
+double divisor11=121;
+double divisor12=144;
+double divisor13=169;
+double divisor14=196;
 
 double division1=i/divisor1;
 //Divides I by 1
@@ -54,29 +58,33 @@ double division9=i/divisor9;
 //Divides I by 81
 double division10=i/divisor10;
 //Divides I by 100
-System.out.println(division1+"(1) "+division2+"(2) "+division3+"(3) "+division4+"(4) "+division5+"(5) "+division6+"(6) "+division7+"(7) "+division8+"(8) "+division9+"(9) "+division10+"(10)");
+double division11=i/divisor11;
+//Divides I by 121
+double division12=i/divisor12;
+//Divides I by 144
+double division13=i/divisor13;
+//Divides I by 169
+double division14=i/divisor14;
+//Divides I by 196
 
-double square1=Math.sqrt(division1);
-//Squares the division of I (by 1)
-double square2=Math.sqrt(division2);
-//Squares the division of I (by 4)
-double square3=Math.sqrt(division3);
-//Squares the division of I (by 9)
-double square4=Math.sqrt(division4);
-//Squares the division of I (by 16)
-double square5=Math.sqrt(division5);
-//Squares the division of I (by 25)
-double square6=Math.sqrt(division6);
-//Squares the division of I (by 36)
-double square7=Math.sqrt(division7);
-//Squares the division of I (by 49)
-double square8=Math.sqrt(division8);
-//Squares the division of I (by 64)
-double square9=Math.sqrt(division9);
-//Squares the division of I (by 81)
-double square10=Math.sqrt(division10);
-//Squares the division of I (by 100)
-System.out.println(square1+"(1) "+square2+"(2) "+square3+"(3) "+square4+"(4) "+square5+"(5) "+square6+"(6) "+square7+"(7) "+square8+"(8) "+square9+"(9) "+square10+"(10)");
+System.out.println(division1+"(1) "+division2+"(2) "+division3+"(3) "+division4+"(4) "+division5+"(5) "+division6+"(6) "+division7+"(7) "+division8+"(8) "+division9+"(9) "+division10+"(10) "+division11+"(11) "+division12+"(12) "+division13+"(13) "+division10+"(14) ");
+
+double checker1=;
+double checker2=;
+double checker3=;
+double checker4=;
+double checker5=;
+double checker6=;
+double checker7=;
+double checker8=;
+double checker9=;
+double checker10=;
+double checker11=;
+double checker12=;
+double checker13=;
+double checker14=;
+
+System.out.println(checker1+" "+checker2+" "+checker3+" "+checker4+" "+checker5+" "+checker6+" "+checker7+" "+checker8+" "+checker9+" "+checker10+" "+checker11+" "+checker12+" "+checker13+" "+checker14);
 
 System.out.println("{"+e+"+-"+"sqrt["+f+"-4"+"("+a+")*"+"("+c+")]}/"+d);
 System.out.println("["+e+"+-"+"sqrt("+f+"+"+
@@ -86,8 +94,48 @@ if(j % 2 == 0){
     System.out.println("["+e+"+-"+j+"]/"+d);
     System.out.println("("+e+"+"+j+")/"+d);
     System.out.println("("+e+"-"+j+")/"+d);
-}else{
-    System.out.println("AAAAAAA TEST");
+}
+if(checker1 == i){
+    System.out.println();
+}
+if(checker2 == i){
+    System.out.println();
+}
+if(checker3 == i){
+    System.out.println();
+}
+if(checker4 == i){
+    System.out.println();
+}
+if(checker5 == i){
+    System.out.println();
+}
+if(checker6 == i){
+    System.out.println();
+}
+if(checker7 == i){
+    System.out.println();
+}
+if(checker8 == i){
+    System.out.println();
+}
+if(checker9 == i){
+    System.out.println();
+}
+if(checker10 == i){
+    System.out.println();
+}
+if(checker11 == i){
+    System.out.println();
+}
+if(checker12 == i){
+    System.out.println();
+}
+if(checker13 == i){
+    System.out.println();
+}
+if(checker14 == i){
+    System.out.println();
+        }
     }
-  }
 }
