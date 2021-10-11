@@ -24,58 +24,58 @@ double j = Math.sqrt(i);
 //Finds the square root of i, which is b^2-4ac
 
 double divisor1=1;
-double divisor2=2;
-double divisor3=3;
-double divisor4=4;
-double divisor5=5;
-double divisor6=6;
-double divisor7=7;
-double divisor8=8;
-double divisor9=9;
-double divisor10=10;
+double divisor2=4;
+double divisor3=9;
+double divisor4=16;
+double divisor5=25;
+double divisor6=36;
+double divisor7=49;
+double divisor8=64;
+double divisor9=81;
+double divisor10=100;
 
 double division1=i/divisor1;
 //Divides I by 1
 double division2=i/divisor2;
-//Divides I by 2
-double division3=i/divisor3;
-//Divides I by 3
-double division4=i/divisor4;
 //Divides I by 4
+double division3=i/divisor3;
+//Divides I by 9
+double division4=i/divisor4;
+//Divides I by 16
 double division5=i/divisor5;
-//Divides I by 5
+//Divides I by 25
 double division6=i/divisor6;
-//Divides I by 6
+//Divides I by 36
 double division7=i/divisor7;
-//Divides I by 7
+//Divides I by 49
 double division8=i/divisor8;
-//Divides I by 8
+//Divides I by 64
 double division9=i/divisor9;
-//Divides I by 8
+//Divides I by 81
 double division10=i/divisor10;
-//Divides I by 10
+//Divides I by 100
 System.out.println(division1+"(1) "+division2+"(2) "+division3+"(3) "+division4+"(4) "+division5+"(5) "+division6+"(6) "+division7+"(7) "+division8+"(8) "+division9+"(9) "+division10+"(10)");
 
 double square1=Math.sqrt(division1);
 //Squares the division of I (by 1)
 double square2=Math.sqrt(division2);
-//Squares the division of I (by 2)
-double square3=Math.sqrt(division3);
-//Squares the division of I (by 3)
-double square4=Math.sqrt(division4);
 //Squares the division of I (by 4)
-double square5=Math.sqrt(division5);
-//Squares the division of I (by 5)
-double square6=Math.sqrt(division6);
-//Squares the division of I (by 6)
-double square7=Math.sqrt(division7);
-//Squares the division of I (by 7)
-double square8=Math.sqrt(division8);
-//Squares the division of I (by 8)
-double square9=Math.sqrt(division9);
+double square3=Math.sqrt(division3);
 //Squares the division of I (by 9)
+double square4=Math.sqrt(division4);
+//Squares the division of I (by 16)
+double square5=Math.sqrt(division5);
+//Squares the division of I (by 25)
+double square6=Math.sqrt(division6);
+//Squares the division of I (by 36)
+double square7=Math.sqrt(division7);
+//Squares the division of I (by 49)
+double square8=Math.sqrt(division8);
+//Squares the division of I (by 64)
+double square9=Math.sqrt(division9);
+//Squares the division of I (by 81)
 double square10=Math.sqrt(division10);
-//Squares the division of I (by 10)
+//Squares the division of I (by 100)
 System.out.println(square1+"(1) "+square2+"(2) "+square3+"(3) "+square4+"(4) "+square5+"(5) "+square6+"(6) "+square7+"(7) "+square8+"(8) "+square9+"(9) "+square10+"(10)");
 
 System.out.println("{"+e+"+-"+"sqrt["+f+"-4"+"("+a+")*"+"("+c+")]}/"+d);
@@ -88,6 +88,6 @@ if(j % 2 == 0){
     System.out.println("("+e+"-"+j+")/"+d);
 }else{
     System.out.println("AAAAAAA TEST");
-}
+    }
   }
 }
