@@ -99,6 +99,8 @@ double checker12=checkerS12*division12;
 double checker13=checkerS13*division13;
 double checker14=checkerS14*division14;
 
+System.out.println(checker1+" "+checker2+" "+checker3+" "+checker4+" "+checker5+" "+checker6+" "+checker7+" "+checker8+" "+checker9+" "+checker10+" "+checker11+" "+checker12+" "+checker13+" "+checker14);
+
 System.out.println("{"+e+"+-"+"sqrt["+f+"-4"+"("+a+")*"+"("+c+")]}/"+d);
 System.out.println("["+e+"+-"+"sqrt("+f+"+"+
 "{"+h+"})]/"+d);
