@@ -2,11 +2,11 @@ public class Calculator2{
 
 public static void main(String[] args){   
 
-int a = -9;
+int a = -1;
 //Literally just variable a
-int b = 12;
+int b = 11;
 //Literally just variable b
-int c = 8;
+int c = 9;
 //Literally just variable c
 int d = a*2;
 //Extra variable
@@ -33,6 +33,10 @@ double divisor7=49;
 double divisor8=64;
 double divisor9=81;
 double divisor10=100;
+double divisor11=121;
+double divisor12=144;
+double divisor13=169;
+double divisor14=196;
 
 double division1=i/divisor1;
 //Divides I by 1
@@ -54,29 +58,20 @@ double division9=i/divisor9;
 //Divides I by 81
 double division10=i/divisor10;
 //Divides I by 100
-System.out.println(division1+"(1) "+division2+"(2) "+division3+"(3) "+division4+"(4) "+division5+"(5) "+division6+"(6) "+division7+"(7) "+division8+"(8) "+division9+"(9) "+division10+"(10)");
+double division11=i/divisor11;
+//Divides I by 121
+double division12=i/divisor12;
+//Divides I by 144
+double division13=i/divisor13;
+//Divides I by 169
+double division14=i/divisor14;
+//Divides I by 196
 
-double square1=Math.sqrt(division1);
-//Squares the division of I (by 1)
-double square2=Math.sqrt(division2);
-//Squares the division of I (by 4)
-double square3=Math.sqrt(division3);
-//Squares the division of I (by 9)
-double square4=Math.sqrt(division4);
-//Squares the division of I (by 16)
-double square5=Math.sqrt(division5);
-//Squares the division of I (by 25)
-double square6=Math.sqrt(division6);
-//Squares the division of I (by 36)
-double square7=Math.sqrt(division7);
-//Squares the division of I (by 49)
-double square8=Math.sqrt(division8);
-//Squares the division of I (by 64)
-double square9=Math.sqrt(division9);
-//Squares the division of I (by 81)
-double square10=Math.sqrt(division10);
-//Squares the division of I (by 100)
-System.out.println(square1+"(1) "+square2+"(2) "+square3+"(3) "+square4+"(4) "+square5+"(5) "+square6+"(6) "+square7+"(7) "+square8+"(8) "+square9+"(9) "+square10+"(10)");
+System.out.println(division1+"(1) "+division2+"(2) "+division3+"(3) "+division4+"(4) "+division5+"(5) "+division6+"(6) "+division7+"(7) "+division8+"(8) "+division9+"(9) "+division10+"(10) "+division11+"(11) "+division12+"(12) "+division13+"(13) "+division10+"(14) ");
+
+
+//Divide dividends, if there is a remainder, don't use them.
+
 
 System.out.println("{"+e+"+-"+"sqrt["+f+"-4"+"("+a+")*"+"("+c+")]}/"+d);
 System.out.println("["+e+"+-"+"sqrt("+f+"+"+
@@ -87,7 +82,49 @@ if(j % 2 == 0){
     System.out.println("("+e+"+"+j+")/"+d);
     System.out.println("("+e+"-"+j+")/"+d);
 }else{
-    System.out.println("AAAAAAA TEST");
+    if(division1%2==0){
+    System.out.println("This equation can be written as the following - ("+division1+")sqrt(1)");
     }
-  }
+    if(division2%2==0){
+    System.out.println("This equation can be written as the following - ("+division2+")sqrt(2)");
+    }
+    if(division3%2==0){
+    System.out.println("This equation can be written as the following - ("+division3+")sqrt(3)");
+    }
+    if(division4%2==0){
+    System.out.println("This equation can be written as the following - ("+division4+")sqrt(4)");
+    }
+    if(division5%2==0){
+    System.out.println("This equation can be written as the following - ("+division5+")sqrt(5)");
+    }
+    if(division6%2==0){
+    System.out.println("This equation can be written as the following - ("+division6+")sqrt(6)");
+    }
+    if(division7%2==0){
+    System.out.println("This equation can be written as the following - ("+division7+")sqrt(7)");
+    }
+    if(division8%2==0){
+    System.out.println("This equation can be written as the following - ("+division8+")sqrt(8)");
+    }
+    if(division9%2==0){
+    System.out.println("This equation can be written as the following - ("+division9+")sqrt(9)");
+    }
+    if(division10%2==0){
+    System.out.println("This equation can be written as the following - ("+division10+")sqrt(10)");
+    }
+    if(division11%2==0){
+    System.out.println("This equation can be written as the following - ("+division11+")sqrt(11)");
+    }
+    if(division12%2==0){
+    System.out.println("This equation can be written as the following - ("+division12+")sqrt(12)");
+    }
+    if(division13%2==0){
+    System.out.println("This equation can be written as the following - ("+division13+")sqrt(13)");
+    }
+    if(division14%2==0){
+    System.out.println("This equation can be written as the following - ("+division14+")sqrt(14)");
+    }
+System.out.println("If nothing has appeared other than the standard calculations, this equation cannot yet be solved by the calculator, or is impossible for Java to calculate properly.");
+}
+    }
 }
