@@ -69,199 +69,10 @@ double division14=i/divisor14;
 
 System.out.println(division1+"(1) "+division2+"(2) "+division3+"(3) "+division4+"(4) "+division5+"(5) "+division6+"(6) "+division7+"(7) "+division8+"(8) "+division9+"(9) "+division10+"(10) "+division11+"(11) "+division12+"(12) "+division13+"(13) "+division10+"(14) ");
 
-double checker1=*;
-double checker2=;
-double checker3=;
-double checker4=;
-double checker5=;
-double checker6=;
-double checker7=;
-double checker8=;
-double checker9=;
-double checker10=;
-double checker11=;
-double checker12=;
-double checker13=;
-double checker14=;
 
-double checker1B=*;
-double checker2B=;
-double checker3B=;
-double checker4B=;
-double checker6B=;
-double checker7B=;
-double checker8B=;
-double checker9B=;
-double checker10B=;
-double checker11B=;
-double checker12B=;
-double checker13B=;
-double checker14B=;
+//Divide dividends, if there is a remainder, don't use them.
 
-double checker1C=*;
-double checker2C=;
-double checker3C=;
-double checker4C=;
-double checker5C=;
-double checker6C=;
-double checker7C=;
-double checker8C=;
-double checker9C=;
-double checker10C=;
-double checker11C=;
-double checker12C=;
-double checker13C=;
-double checker14C=;
 
-double checker1D=*;
-double checker2D=;
-double checker3D=;
-double checker4D=;
-double checker5D=;
-double checker6D=;
-double checker7D=;
-double checker8D=;
-double checker9D=;
-double checker10D=;
-double checker11D=;
-double checker12D=;
-double checker13D=;
-double checker14D=;
-
-double checker1E=*;
-double checker2E=;
-double checker3E=;
-double checker4E=;
-double checker5E=;
-double checker6E=;
-double checker7E=;
-double checker8E=;
-double checker9E=;
-double checker10E=;
-double checker11E=;
-double checker12E=;
-double checker13E=;
-double checker14E=;
-
-double checker1F=*;
-double checker2F=;
-double checker3F=;
-double checker4F=;
-double checker5F=;
-double checker6F=;
-double checker7F=;
-double checker8F=;
-double checker9F=;
-double checker10F=;
-double checker11F=;
-double checker12F=;
-double checker13F=;
-double checker14F=;
-
-double checker1G=*;
-double checker2G=;
-double checker3G=;
-double checker4G=;
-double checker5G=;
-double checker6G=;
-double checker7G=;
-double checker8G=;
-double checker9G=;
-double checker10G=;
-double checker11G=;
-double checker12G=;
-double checker13G=;
-double checker14G=;
-
-double checker1H=*;
-double checker2H=;
-double checker3H=;
-double checker4H=;
-double checker5H=;
-double checker6H=;
-double checker7H=;
-double checker8H=;
-double checker9H=;
-double checker10H=;
-double checker11H=;
-double checker12H=;
-double checker13H=;
-double checker14H=;
-
-double checker1I=*;
-double checker2I=;
-double checker3I=;
-double checker4I=;
-double checker5I=;
-double checker6I=;
-double checker7I=;
-double checker8I=;
-double checker9I=;
-double checker10I=;
-double checker11I=;
-double checker12I=;
-double checker13I=;
-double checker14I=;
-
-double checker1J=*;
-double checker2J=;
-double checker3J=;
-double checker4J=;
-double checker5J=;
-double checker6J=;
-double checker7J=;
-double checker8J=;
-double checker9J=;
-double checker10J=;
-double checker11J=;
-double checker12J=;
-double checker13J=;
-double checker14J=;
-
-double checker1K=*;
-double checker2K=;
-double checker3K=;
-double checker4K=;
-double checker5K=;
-double checker6K=;
-double checker7K=;
-double checker8K=;
-double checker9K=;
-double checker10K=;
-double checker11K=;
-double checker12K=;
-double checker13K=;
-double checker14K=;
-
-double checker1L=*;
-double checker2L=;
-double checker3L=;
-double checker4L=;
-double checker5L=;
-double checker6L=;
-double checker7L=;
-double checker8L=;
-double checker9L=;
-double checker10L=;
-double checker11L=;
-double checker12L=;
-double checker13L=;
-double checker14L=;
-
-double checker1M=*;
-double checker2M=;
-double checker3M=;
-double checker4M=;
-double checker5M=;
-double checker6M=;
-double checker7M=;
-double checker8M=;
-double checker9M=;
-double checker10M=;
-double checker11M=;
-double checker12M=;
-double checker13M=;
-double checker14M=;
 
 
 System.out.println("{"+e+"+-"+"sqrt["+f+"-4"+"("+a+")*"+"("+c+")]}/"+d);
@@ -272,48 +83,22 @@ if(j % 2 == 0){
     System.out.println("["+e+"+-"+j+"]/"+d);
     System.out.println("("+e+"+"+j+")/"+d);
     System.out.println("("+e+"-"+j+")/"+d);
+}else{
+    if(division1%2==0){
+    System.out.println("This equation can be written as the following - ("+division1+")sqrt(1)");
 }
-if(checker1 == i){
-    System.out.println("");
+if(division1%2==0){
+    
 }
-if(checker2 == i){
-    System.out.println("");
+if(division1%2==0){
+    
 }
-if(checker3 == i){
-    System.out.println("");
+if(division1%2==0){
+    
 }
-if(checker4 == i){
-    System.out.println("");
+if(division1%2==0){
+    
 }
-if(checker5 == i){
-    System.out.println("");
 }
-if(checker6 == i){
-    System.out.println("");
-}
-if(checker7 == i){
-    System.out.println("");
-}
-if(checker8 == i){
-    System.out.println("");
-}
-if(checker9 == i){
-    System.out.println("");
-}
-if(checker10 == i){
-    System.out.println("");
-}
-if(checker11 == i){
-    System.out.println("");
-}
-if(checker12 == i){
-    System.out.println("");
-}
-if(checker13 == i){
-    System.out.println("");
-}
-if(checker14 == i){
-    System.out.println("");
-        }
     }
 }
