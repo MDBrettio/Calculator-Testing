@@ -1,1 +1,17 @@
+public class PotentialEnergy{
 
+     public static void main(String []args){
+         
+double a=9.8;
+//gravity, always 9.8 - this never changes
+double b=215;
+//mass
+double c=51;
+//height
+double e=a*b*c;
+//Finished equation
+System.out.println("Potential Energy = "+e+" Joules");
+
+         
+     }
+}
