@@ -2,17 +2,49 @@ public class KineticEnergy{
 
      public static void main(String []args){
          
-double a=.5;
-//.5 to be multiplied with mass. This never changes
-double b=215;
+int A=1;
+//Calculate Joules
+int B=1;
+//Calculate Velocity
+int C=0;
+//Calculate Mass
+
+if(A == 1){
+double b=45;
 //mass
-double c=51;
+double c=6933.333333333333;
 //Velocity
 double d=c*c;
 //velocity squared
-double e=(a*b)*d;
+double e=(.5*b)*d;
 
 System.out.println("Kinetic Energy = "+e+" Joules");
+}
+
+if(B==1){
+//This is to find the
+//velocity of an item
+double aa=78000;
+//total joules to be divided
+double bb=45;
+//mass
+double dd=(aa/.5)/bb;
+//Final Velocity
+System.out.println("Velocity = "+dd);
+}
+if(C==1){
+//This is to find the
+//mass of an item
+double aaa;
+//total joules to be divided
+double bbb;
+//velocity
+double ccc;
+//velocity squared
+double ddd;
+}
+
+
 
          
      }
