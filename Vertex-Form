@@ -2,35 +2,34 @@ public class HelloWorld{
 
      public static void main(String []args){
 //Three starting integers         
-float a=1;
-float b=2;
-float c=3;
+double a=1;
+double b=-8.9;
+double c=4.74;
 
 System.out.println("f(x)=("+a+"x^2)+("+b+"x)+("+c+")");
 if (a==1){
 System.out.println("f(x)=1(x^2+"+b+"x)+"+c);
 //Equation to get "new b"
-float d=b*-1;
-float NewB=d/2;
-
+double d=b*-1;
+double NewB=d/2;
 //Equation to get "new c"
-float e=b/2;
-float NewC=e*e;
+double e=b/2;
+double NewC=e*e; 
 
-float AxNewC=1*NewC
-System.out.println("f(x)=1(x^2+"+b+"x+"+NewC+")+"+c+"-"+
+double AxNewC=1*NewC;
+double FinalC=c-AxNewC;
+
+System.out.println(AxNewC);
+
+
+
+System.out.println("f(x)=1(x^2+"+b+"x+"+NewC+")+"+c+"-"+AxNewC);
+System.out.println("Vertex Form = f(x)=1[x-("+NewB+")]^2+("+FinalC+")");
+System.out.println("Vertex="+NewB+","+FinalC);
 }
-
-
-
-
-
-
-
-
-System.out.println(d);
 
 
          
      }
 }
+
