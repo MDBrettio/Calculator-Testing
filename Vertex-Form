@@ -1,38 +1,48 @@
 public class HelloWorld{
 
      public static void main(String []args){
-//Three starting integers         
-double a=1;
-double b=-8.9;
-double c=4.74;
+      
+double a=-.5;
+double b=1.5;
+double c=-2;
 
 System.out.println("f(x)=("+a+"x^2)+("+b+"x)+("+c+")");
+
 if (a==1){
 System.out.println("f(x)=1(x^2+"+b+"x)+"+c);
-//Equation to get "new b"
 double d=b*-1;
 double NewB=d/2;
-//Equation to get "new c"
 double e=b/2;
 double NewC=e*e; 
-
 double AxNewC=1*NewC;
 double FinalC=c-AxNewC;
-
 System.out.println("f(x)=1(x^2+"+b+"x+"+NewC+")+"+c+"-"+AxNewC);
 System.out.println("Vertex Form = f(x)=1[x-("+NewB+")]^2+("+FinalC+")");
 System.out.println("Vertex="+NewB+","+FinalC);
 }
-if(a!=1){
-    
-    
-    
-    
-    
-    
-    
-}
 
+if(a!=1){
+double altB=b/a;
+
+double d=altB*-1;
+double NewB=d/2;
+double Bdiv2=altB/2;
+double NewC=Bdiv2*Bdiv2; 
+double AxNewC=a*NewC;
+double FinalC=c-AxNewC;
+
+
+System.out.println("Alternate B="+altB);
+System.out.println("New B="+NewB);
+System.out.println("B divided by 2="+Bdiv2);
+System.out.println("New C="+NewC);
+System.out.println("A*New C="+NewC);
+System.out.println("The Final C="+FinalC);
+    
+System.out.println("f(x)=["+a+"](x^2+["+altB+"x]+["+NewC+"])+["+c+"] - ["+AxNewC+"]");
+System.out.println("Vertex Form = f(x)=1[x-("+NewB+")]^2+("+FinalC+")");
+System.out.println("Vertex="+NewB+","+FinalC);
+}
          
      }
 }
