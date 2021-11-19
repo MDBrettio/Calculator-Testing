@@ -19,17 +19,20 @@ double NewC=e*e;
 double AxNewC=1*NewC;
 double FinalC=c-AxNewC;
 
-System.out.println(AxNewC);
-
-
-
 System.out.println("f(x)=1(x^2+"+b+"x+"+NewC+")+"+c+"-"+AxNewC);
 System.out.println("Vertex Form = f(x)=1[x-("+NewB+")]^2+("+FinalC+")");
 System.out.println("Vertex="+NewB+","+FinalC);
 }
-
+if(a!=1){
+    
+    
+    
+    
+    
+    
+    
+}
 
          
      }
 }
-
