@@ -1,0 +1,29 @@
+public class MyClass {
+    public static void main(String args[]) {
+int A=140;
+
+boolean GreaterThan, LesserThan, EqualTo;
+
+if(A>140){
+    GreaterThan=true;
+    LesserThan=false;
+    EqualTo=false;
+    System.out.println("Is the number greater than 140? "+GreaterThan+". Is the number less than 140? "+LesserThan+". Is the number equal to 140? "+EqualTo);
+
+        }
+if(A<140){
+    GreaterThan=false;
+    LesserThan=true;
+    EqualTo=false;
+    System.out.println("Is the number greater than 140? "+GreaterThan+". Is the number less than 140? "+LesserThan+". Is the number equal to 140? "+EqualTo);
+
+        }
+if(A==140){
+    GreaterThan=false;
+    LesserThan=false;
+    EqualTo=true;
+    System.out.println("Is the number greater than 140? "+GreaterThan+". Is the number less than 140? "+LesserThan+". Is the number equal to 140? "+EqualTo);
+
+        }
+    }
+}
