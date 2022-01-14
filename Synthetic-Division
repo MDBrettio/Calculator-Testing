@@ -1,24 +1,23 @@
 public class MyClass {
     public static void main(String args[]) {
       //Amount of variables
-    int aa = 0;
+    int aa = 1;
     int aaa = 0;
     int aaaa = 0;
-    int aaaaa = 1;
+    int aaaaa = 0;
       
-      if(aa == 1);{
+      if(aa == 1){
           // Coefficients in equation
           // from left to right
-          int StupidEquation2=
-          int a;
-          int b;
-          int c;
+          int a=65;
+          int b=-15;
+          int c=23;
+          System.out.println("Does this look right? - ["+a+"]x^2+["+b+"]x+["+c+"]");
       }    
       if(aaa == 1){
           // Coefficients in equation
           // from left to right
-          int StupidEquation3=
-          int a;
+          int a=15;
           int b;
           int c;
           int d;
@@ -27,8 +26,7 @@ public class MyClass {
       if(aaaa == 1){
           // Coefficients in equation
           // from left to right
-          int StupidEquation4=
-          int a;
+          int a=56;
           int b;
           int c;
           int d;
@@ -37,7 +35,6 @@ public class MyClass {
       if(aaaaa == 1){
           // Coefficients in equation
           // from left to right
-          int StupidEquation5=
           System.out.println("Does this look correct?");
           int a=12;
           int b=12;
