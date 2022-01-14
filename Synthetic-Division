@@ -5,7 +5,9 @@ public class MyClass {
     int aaa = 0;
     int aaaa = 0;
     int aaaaa = 0;
-        //
+        // (X+_) _ = Number
+    int AAAAA=-5;
+    int InvertA=AAAAA*-1;
     
       if(aa == 1){
           // Coefficients in equation
@@ -13,7 +15,17 @@ public class MyClass {
           int a=65;
           int b=-15;
           int c=23;
-          System.out.println("Does this look right? - ["+a+"]x^2+["+b+"]x+["+c+"]");
+          System.out.println("Does this look right? - ["+a+"x^2]+["+b+"x]+["+c+"]");
+          
+          int Multi1=InvertA*a;
+          int Sub1=b+Multi1;
+          int Multi2=Sub1*InvertA;
+          int Sub2=c+Multi2;
+          if(AAAAA>0){
+          System.out.println("The final answer to this equation is ["+a+"x]+["+Sub1+"] with a remainder of ["+Sub2+"]/(x+"+AAAAA+")");
+          }else{
+              System.out.println("The final answer to this equation is ["+a+"x]+["+Sub1+"] with a remainder of ["+Sub2+"]/(x"+AAAAA+")");
+          }
       }    
       if(aaa == 1){
           // Coefficients in equation
@@ -31,6 +43,7 @@ public class MyClass {
           int b;
           int c;
           int d;
+          int e;
       }
       
       if(aaaaa == 1){
@@ -42,6 +55,7 @@ public class MyClass {
           int c=412;
           int d=55;
           int e=55;
+          int f;
       }    
     }
 }
