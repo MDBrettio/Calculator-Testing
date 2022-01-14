@@ -1,0 +1,50 @@
+public class MyClass {
+    public static void main(String args[]) {
+      //Amount of variables
+    int 2Variables = 0;
+    int 3Variables = 0;
+    int 4Variables = 0;
+    int 5Variables = 1;
+      
+      if(2Variables = 1);{
+          // Coefficients in equation
+          // from left to right
+          String StupidEquation2;
+          int;
+          int;
+          int;
+      }    
+      if(3Variables = 1){
+          // Coefficients in equation
+          // from left to right
+          String StupidEquation3;
+          int;
+          int;
+          int;
+          int;
+      } 
+      
+      if(4Variables = 1){
+          // Coefficients in equation
+          // from left to right
+          String StupidEquation4;
+          int;
+          int;
+          int;
+          int;
+          int;
+      }
+      
+      if(5Variables = 1){
+          // Coefficients in equation
+          // from left to right
+          String StupidEquation5;
+          System.out.println("Does this look correct?");
+          int=12;
+          int=12;
+          int=412;
+          int=55;
+          int=55;
+      }    
+    }
+}
