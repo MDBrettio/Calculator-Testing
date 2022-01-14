@@ -1,11 +1,12 @@
 public class MyClass {
     public static void main(String args[]) {
-      //Amount of variables
+        //Amount of variables
     int aa = 1;
     int aaa = 0;
     int aaaa = 0;
     int aaaaa = 0;
-      
+        //
+    
       if(aa == 1){
           // Coefficients in equation
           // from left to right
