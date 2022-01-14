@@ -1,50 +1,49 @@
 public class MyClass {
     public static void main(String args[]) {
       //Amount of variables
-    int 2Variables = 0;
-    int 3Variables = 0;
-    int 4Variables = 0;
-    int 5Variables = 1;
+    int aa = 0;
+    int aaa = 0;
+    int aaaa = 0;
+    int aaaaa = 1;
       
-      if(2Variables = 1);{
+      if(aa == 1);{
           // Coefficients in equation
           // from left to right
-          String StupidEquation2;
-          int;
-          int;
-          int;
+          int StupidEquation2=
+          int a;
+          int b;
+          int c;
       }    
-      if(3Variables = 1){
+      if(aaa == 1){
           // Coefficients in equation
           // from left to right
-          String StupidEquation3;
-          int;
-          int;
-          int;
-          int;
+          int StupidEquation3=
+          int a;
+          int b;
+          int c;
+          int d;
       } 
       
-      if(4Variables = 1){
+      if(aaaa == 1){
           // Coefficients in equation
           // from left to right
-          String StupidEquation4;
-          int;
-          int;
-          int;
-          int;
-          int;
+          int StupidEquation4=
+          int a;
+          int b;
+          int c;
+          int d;
       }
       
-      if(5Variables = 1){
+      if(aaaaa == 1){
           // Coefficients in equation
           // from left to right
-          String StupidEquation5;
+          int StupidEquation5=
           System.out.println("Does this look correct?");
-          int=12;
-          int=12;
-          int=412;
-          int=55;
-          int=55;
+          int a=12;
+          int b=12;
+          int c=412;
+          int d=55;
+          int e=55;
       }    
     }
 }
