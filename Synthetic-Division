@@ -2,9 +2,9 @@ public class MyClass {
     public static void main(String args[]) {
         //Amount of variables
     int aa = 0;
-    int aaa = 1;
-    int aaaa = 0;
-    int aaaaa = 0;
+    int aaa = 0;
+    int aaaa = 1;
+    int aaaaa = 1;
         // (X+_) _ = Number
     int AAAAA=-5;
     int InvertA=AAAAA*-1;
@@ -12,18 +12,20 @@ public class MyClass {
       if(aa == 1){
           // Coefficients in equation
           // from left to right
-          int a=65;
-          int b=-15;
-          int c=23;
-          System.out.println("Does this look right? - ["+a+"x^2]+["+b+"x]+["+c+"]");
+          int a=15;
+          int b=15;
+          int c=15;
+          System.out.println("Does this look correct? - ["+a+"x^2]+["+b+"x]+["+c+"]");
           
           int Multi1=InvertA*a;
           int Sub1=b+Multi1;
           int Multi2=Sub1*InvertA;
           int Sub2=c+Multi2;
           if(AAAAA>0){
+          
           System.out.println("The final answer to this equation is ["+a+"x]+["+Sub1+"] with a remainder of ["+Sub2+"]/(x+"+AAAAA+")");
-          }else{
+          }
+          if(AAAAA<0){
               System.out.println("The final answer to this equation is ["+a+"x]+["+Sub1+"] with a remainder of ["+Sub2+"]/(x"+AAAAA+")");
           }
       }    
@@ -34,39 +36,78 @@ public class MyClass {
           int b=15;
           int c=15;
           int d=15;
-          System.out.println("Does this look right? - ["+a+"x^3]+["+b+"x^2]+["+c+"x]+["+d+"]");
+          System.out.println("Does this look correct? - ["+a+"x^3]+["+b+"x^2]+["+c+"x]+["+d+"]");
           
           int Multi1=InvertA*a;
           int Sub1=b+Multi1;
           int Multi2=Sub1*InvertA;
           int Sub2=c+Multi2;
+          int Multi3=Sub2*InvertA;
+          int Sub3=d+Multi3;
+          
           if(AAAAA>0){
-          System.out.println("The final answer to this equation is ["+a+"x]+["+Sub1+"] with a remainder of ["+Sub2+"]/(x+"+AAAAA+")");
-          }else{
-              System.out.println("The final answer to this equation is ["+a+"x]+["+Sub1+"] with a remainder of ["+Sub2+"]/(x"+AAAAA+")");
+              System.out.println("The final answer to this equation is ["+a+"x^3]+["+Sub1+"x^2]+["+Sub2+"x] with a remainder of ["+Sub3+"]/(x+"+AAAAA+")");
+          }
+          if(AAAAA<0){
+              System.out.println("The final answer to this equation is ["+a+"x^3]+["+Sub1+"x^2]+["+Sub2+"x] with a remainder of ["+Sub3+"]/(x"+AAAAA+")");
           }
       } 
       
       if(aaaa == 1){
           // Coefficients in equation
           // from left to right
-          int a=56;
-          int b;
-          int c;
-          int d;
-          int e;
+          int a=15;
+          int b=15;
+          int c=15;
+          int d=15;
+          int e=15;
+          System.out.println("Does this look correct? - ["+a+"x^4]+["+b+"x^3]+["+c+"x^2]+["+d+"x]+["+e+"]");
+          
+          int Multi1=InvertA*a;
+          int Sub1=b+Multi1;
+          int Multi2=Sub1*InvertA;
+          int Sub2=c+Multi2;
+          int Multi3=Sub2*InvertA;
+          int Sub3=d+Multi3;
+          int Multi4=Sub3*InvertA;
+          int Sub4=e+Multi4;
+          
+          if(AAAAA>0){
+              System.out.println("The final answer to this equation is ["+a+"x^3]+["+Sub1+"x^2]+["+Sub2+"x]+["+Sub3+"] with a remainder of ["+Sub4+"]/(x+"+AAAAA+")");
+          }
+          if(AAAAA<0){
+              System.out.println("The final answer to this equation is ["+a+"x^3]+["+Sub1+"x^2]+["+Sub2+"x]+["+Sub3+"] with a remainder of ["+Sub4+"]/(x"+AAAAA+")");
+          }
       }
       
       if(aaaaa == 1){
           // Coefficients in equation
           // from left to right
-          System.out.println("Does this look correct?");
-          int a=12;
-          int b=12;
-          int c=412;
-          int d=55;
-          int e=55;
-          int f;
+          int a=15;
+          int b=15;
+          int c=15;
+          int d=15;
+          int e=15;
+          int f=15;
+          System.out.println("Does this look correct? - ["+a+"x^5]+["+b+"x^4]+["+c+"x^3]+["+d+"x^2]+["+e+"x]+["+f+"]");
+          
+          int Multi1=InvertA*a;
+          int Sub1=b+Multi1;
+          int Multi2=Sub1*InvertA;
+          int Sub2=c+Multi2;
+          int Multi3=Sub2*InvertA;
+          int Sub3=d+Multi3;
+          int Multi4=Sub3*InvertA;
+          int Sub4=e+Multi4;
+          int Multi5=Sub4+InvertA;
+          int Sub5=f+Multi5;
+          
+          if(AAAAA>0){
+              System.out.println("The final answer to this equation is ["+a+"x^4]+["+Sub1+"x^3]+["+Sub2+"x^2]+["+Sub3+"x]+["+Sub4+"] with a remainder of ["+Sub5+"]/(x+"+AAAAA+")");
+          }
+          if(AAAAA<0){
+              System.out.println("The final answer to this equation is ["+a+"x^4]+["+Sub1+"x^3]+["+Sub2+"x^2]+["+Sub3+"x]+["+Sub4+"] with a remainder of ["+Sub5+"]/(x"+AAAAA+")");
+          }
       }    
     }
 }
