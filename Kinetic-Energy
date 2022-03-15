@@ -1,51 +1,68 @@
+import javax.lang.model.element.ModuleElement;
+
 public class KineticEnergy{
 
-     public static void main(String []args){
-         
-int A=1;
+    public static void main(String []args){
+
+        int CalcJoules=1;
 //Calculate Joules
-int B=1;
+        int CalcVelocity=1;
 //Calculate Velocity
-int C=0;
+        int CalcMass=1;
+
 //Calculate Mass
 
-if(A == 1){
-double b=45;
+        if(CalcJoules == 1){
+            double Mass=45;
 //mass
-double c=6933.333333333333;
+            double Velocity=25;
 //Velocity
-double d=c*c;
+            double VelSquared=Velocity*Velocity;
 //velocity squared
-double e=(.5*b)*d;
+            double e=(.5*Mass)*VelSquared;
+            System.out.println("CalcJoules=1, calculating Joules");
+            System.out.println("Mass = "+Mass);
+            System.out.println("Velocity = "+Velocity);
+            System.out.println("Velocity Squared = "+VelSquared);
+            System.out.println("Kinetic Energy = "+e+" Joules");
+            System.out.println(" ");
+        }
 
-System.out.println("Kinetic Energy = "+e+" Joules");
-}
-
-if(B==1){
+        if(CalcVelocity==1){
 //This is to find the
 //velocity of an item
-double aa=78000;
+            double TotalJoules=500;
 //total joules to be divided
-double bb=45;
+            double Mass=45;
 //mass
-double dd=(aa/.5)/bb;
+            double Velocity=(TotalJoules/.5)/Mass;
 //Final Velocity
-System.out.println("Velocity = "+dd);
-}
-if(C==1){
+            System.out.println("CalcVelocity = 1, calculating velocity");
+            System.out.println("TotalJoules = "+TotalJoules);
+            System.out.println("Mass = "+Mass);
+            System.out.println("Velocity = "+Velocity);
+            System.out.println(" ");
+        }
+        if(CalcMass==1){
 //This is to find the
 //mass of an item
-double aaa;
+            double TotalJoules=500;
 //total joules to be divided
-double bbb;
+            double Velocity=25;
 //velocity
-double ccc;
+            double VelSquared=Velocity*Velocity;
 //velocity squared
-double ddd;
-}
+            double JouleDivisor=VelSquared*.5 ;
+//the divisor to find mass
+            double Mass=TotalJoules/JouleDivisor;
+//final mass
+            System.out.println("CalcMass = 1, calculating mass");
+            System.out.println("TotalJoules = "+TotalJoules);
+            System.out.println("Velocity = "+Velocity);
+            System.out.println("VelSquared = "+VelSquared);
+            System.out.println("the JouleDivisor = "+JouleDivisor);
+            System.out.println("Mass = "+Mass);
 
-
-
-         
-     }
+        }
+    }
 }
