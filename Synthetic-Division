@@ -1,66 +1,75 @@
-import java.sql.SQLOutput;
 import java.util.Scanner;
-import java.util.zip.CheckedOutputStream;
 
 public class syntheticDivision {
 
 public static void main(String args[]) {
 
 Scanner sc = new Scanner(System.in);
-        System.out.println("How many variables does the equation have?");
+        System.out.println("How many variables does the equation have? (This program can handle up to five variables)");
 
 int variableDecision = sc.nextInt();
 
         //Amount of variables
-        int twoVariables = 0;
-        int threeVariables = 0;
-        int fourVariables = 0;
-        int fiveVariables = 0;
+        boolean twoVariables = false;
+        boolean threeVariables = false;
+        boolean fourVariables = false;
+        boolean fiveVariables = false;
         // (X+_) _ = Number
         switch (variableDecision){
-                case 2: twoVariables = 1;
+                case 2: twoVariables = true;
                 break;
-                case 3: threeVariables = 1;
+                case 3: threeVariables = true;
                 break;
-                case 4: fourVariables = 1;
+                case 4: fourVariables = true;
                 break;
-                case 5: fiveVariables = 1;
+                case 5: fiveVariables = true;
                 break;
         }
+        int standAloneNumber =-5;
+        int InvertA=standAloneNumber*-1;
 
-
-        int AAAAA=-5;
-        int InvertA=AAAAA*-1;
-
-        if(twoVariables == 1){
+        if(twoVariables){
         // Coefficients in equation
         // from left to right
-        int coEff1=15;
-        int coEff2=15;
-        int coEff3=15;
+                System.out.println("What is the first coefficient? (e.x. - In 15x^2 [15] is the coefficient)");
+        int coEff1=sc.nextInt();
+                System.out.println("What is the second coefficient? (e.x. - In 15x^2 [15] is the coefficient)");
+        int coEff2=sc.nextInt();
+                System.out.println("What is the last coefficient, without a variable?");
+        int coEff3=sc.nextInt();
+
         System.out.println("Does this look correct? - ["+coEff1+"x^2]+["+coEff2+"x]+["+coEff3+"]");
 
+        // All that good math jazz
+        // that I managed to forget!
         int Multi1=InvertA*coEff1;
         int Sub1=coEff2+Multi1;
         int Multi2=Sub1*InvertA;
         int Sub2=coEff3+Multi2;
-        if(AAAAA>0){
+        if(standAloneNumber>0){
 
-        System.out.println("The final answer to this equation is ["+coEff1+"x]+["+Sub1+"] with a remainder of ["+Sub2+"]/(x+"+AAAAA+")");
+        System.out.println("The final answer to this equation is ["+coEff1+"x]+["+Sub1+"] with a remainder of ["+Sub2+"]/(x+"+standAloneNumber+")");
         }
-        if(AAAAA<0){
-        System.out.println("The final answer to this equation is ["+coEff1+"x]+["+Sub1+"] with a remainder of ["+Sub2+"]/(x"+AAAAA+")");
+        if(standAloneNumber<0){
+        System.out.println("The final answer to this equation is ["+coEff1+"x]+["+Sub1+"] with a remainder of ["+Sub2+"]/(x"+standAloneNumber+")");
         }
         }
-        if(threeVariables == 1){
+        if(threeVariables){
         // Coefficients in equation
         // from left to right
-        int coEff1=15;
-        int coEff2=15;
-        int coEff3=15;
-        int coEff4=15;
+                System.out.println("What is the first coefficient? (e.x. - In 15x^2 [15] is the coefficient)");
+        int coEff1=sc.nextInt();
+                System.out.println("What is the second coefficient? (e.x. - In 15x^2 [15] is the coefficient)");
+        int coEff2=sc.nextInt();
+                System.out.println("What is the third coefficient? (e.x. - In 15x^2 [15] is the coefficient)");
+        int coEff3=sc.nextInt();
+                System.out.println("What is the last coefficient, without a variable?");
+        int coEff4=sc.nextInt();
+
         System.out.println("Does this look correct? - ["+coEff1+"x^3]+["+coEff2+"x^2]+["+coEff3+"x]+["+coEff4+"]");
 
+        // All that good math jazz
+        // that I managed to forget!
         int Multi1=InvertA*coEff1;
         int Sub1=coEff2+Multi1;
         int Multi2=Sub1*InvertA;
@@ -68,24 +77,30 @@ int variableDecision = sc.nextInt();
         int Multi3=Sub2*InvertA;
         int Sub3=coEff4+Multi3;
 
-        if(AAAAA>0){
-        System.out.println("The final answer to this equation is ["+coEff1+"x^3]+["+Sub1+"x^2]+["+Sub2+"x] with a remainder of ["+Sub3+"]/(x+"+AAAAA+")");
+        if(standAloneNumber>0){
+        System.out.println("The final answer to this equation is ["+coEff1+"x^3]+["+Sub1+"x^2]+["+Sub2+"x] with a remainder of ["+Sub3+"]/(x+"+standAloneNumber+")");
         }
-        if(AAAAA<0){
-        System.out.println("The final answer to this equation is ["+coEff1+"x^3]+["+Sub1+"x^2]+["+Sub2+"x] with a remainder of ["+Sub3+"]/(x"+AAAAA+")");
+        if(standAloneNumber<0){
+        System.out.println("The final answer to this equation is ["+coEff1+"x^3]+["+Sub1+"x^2]+["+Sub2+"x] with a remainder of ["+Sub3+"]/(x"+standAloneNumber+")");
         }
         }
-
-        if(fourVariables == 1){
+        if(fourVariables){
         // Coefficients in equation
         // from left to right
-        int coEff1=15;
-        int coEff2=15;
-        int coEff3=15;
-        int coEff4=15;
-        int coEff5=15;
+                System.out.println("What is the first coefficient? (e.x. - In 15x^2 [15] is the coefficient)");
+        int coEff1=sc.nextInt();
+                System.out.println("What is the second coefficient? (e.x. - In 15x^2 [15] is the coefficient)");
+        int coEff2=sc.nextInt();
+                System.out.println("What is the third coefficient? (e.x. - In 15x^2 [15] is the coefficient)");
+        int coEff3=sc.nextInt();
+                System.out.println("What is the fourth coefficient? (e.x. - In 15x^2 [15] is the coefficient)");
+        int coEff4=sc.nextInt();
+                System.out.println("What is the last coefficient, without a variable?");
+        int coEff5=sc.nextInt();
         System.out.println("Does this look correct? - ["+coEff1+"x^4]+["+coEff2+"x^3]+["+coEff3+"x^2]+["+coEff4+"x]+["+coEff5+"]");
 
+        // All that good math jazz
+        // that I managed to forget!
         int Multi1=InvertA*coEff1;
         int Sub1=coEff2+Multi1;
         int Multi2=Sub1*InvertA;
@@ -95,25 +110,33 @@ int variableDecision = sc.nextInt();
         int Multi4=Sub3*InvertA;
         int Sub4=coEff5+Multi4;
 
-        if(AAAAA>0){
-        System.out.println("The final answer to this equation is ["+coEff1+"x^3]+["+Sub1+"x^2]+["+Sub2+"x]+["+Sub3+"] with a remainder of ["+Sub4+"]/(x+"+AAAAA+")");
+        if(standAloneNumber>0){
+        System.out.println("The final answer to this equation is ["+coEff1+"x^3]+["+Sub1+"x^2]+["+Sub2+"x]+["+Sub3+"] with a remainder of ["+Sub4+"]/(x+"+standAloneNumber+")");
         }
-        if(AAAAA<0){
-        System.out.println("The final answer to this equation is ["+coEff1+"x^3]+["+Sub1+"x^2]+["+Sub2+"x]+["+Sub3+"] with a remainder of ["+Sub4+"]/(x"+AAAAA+")");
+        if(standAloneNumber<0){
+        System.out.println("The final answer to this equation is ["+coEff1+"x^3]+["+Sub1+"x^2]+["+Sub2+"x]+["+Sub3+"] with a remainder of ["+Sub4+"]/(x"+standAloneNumber+")");
         }
         }
 
-        if(fiveVariables == 1){
+        if(fiveVariables){
         // Coefficients in equation
         // from left to right
-        int coEff1=15;
-        int coEff2=15;
-        int coEff3=15;
-        int coEff4=15;
-        int coEff5=15;
-        int coEff6=15;
+                System.out.println("What is the first coefficient? (e.x. - In 15x^2 [15] is the coefficient)");
+        int coEff1=sc.nextInt();
+                System.out.println("What is the second coefficient? (e.x. - In 15x^2 [15] is the coefficient)");
+        int coEff2=sc.nextInt();
+                System.out.println("What is the third coefficient? (e.x. - In 15x^2 [15] is the coefficient)");
+        int coEff3=sc.nextInt();
+                System.out.println("What is the fourth coefficient? (e.x. - In 15x^2 [15] is the coefficient)");
+        int coEff4=sc.nextInt();
+                System.out.println("What is the fifth coefficient? (e.x. - In 15x^2 [15] is the coefficient)");
+        int coEff5=sc.nextInt();
+                System.out.println("What is the last coefficient, without a variable?");
+        int coEff6=sc.nextInt();
         System.out.println("Does this look correct? - ["+coEff1+"x^5]+["+coEff2+"x^4]+["+coEff3+"x^3]+["+coEff4+"x^2]+["+coEff5+"x]+["+coEff6+"]");
 
+        // All that good math jazz
+        // that I managed to forget!
         int Multi1=InvertA*coEff1;
         int Sub1=coEff2+Multi1;
         int Multi2=Sub1*InvertA;
@@ -125,11 +148,11 @@ int variableDecision = sc.nextInt();
         int Multi5=Sub4+InvertA;
         int Sub5=coEff6+Multi5;
 
-        if(AAAAA>0){
-        System.out.println("The final answer to this equation is ["+coEff1+"x^4]+["+Sub1+"x^3]+["+Sub2+"x^2]+["+Sub3+"x]+["+Sub4+"] with a remainder of ["+Sub5+"]/(x+"+AAAAA+")");
+        if(standAloneNumber>0){
+        System.out.println("The final answer to this equation is ["+coEff1+"x^4]+["+Sub1+"x^3]+["+Sub2+"x^2]+["+Sub3+"x]+["+Sub4+"] with a remainder of ["+Sub5+"]/(x+"+standAloneNumber+")");
         }
-        if(AAAAA<0){
-        System.out.println("The final answer to this equation is ["+coEff1+"x^4]+["+Sub1+"x^3]+["+Sub2+"x^2]+["+Sub3+"x]+["+Sub4+"] with a remainder of ["+Sub5+"]/(x"+AAAAA+")");
+        if(standAloneNumber<0){
+        System.out.println("The final answer to this equation is ["+coEff1+"x^4]+["+Sub1+"x^3]+["+Sub2+"x^2]+["+Sub3+"x]+["+Sub4+"] with a remainder of ["+Sub5+"]/(x"+standAloneNumber+")");
             }
         }
     }
