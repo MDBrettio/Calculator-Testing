@@ -1,130 +1,136 @@
-public class Calculator2{
+import java.sql.SQLOutput;
+import java.util.Scanner;
+import java.util.zip.CheckedOutputStream;
 
-public static void main(String[] args){   
+public class syntheticDivision {
 
-int a = -1;
-//Literally just variable a
-int b = 11;
-//Literally just variable b
-int c = 9;
-//Literally just variable c
-int d = a*2;
-//Extra variable
-int e = b*-1;
-//Provides the opposite of variable b
-int f = b*b;
-//Provides the square of b. Multiplies b by b to get b^2
-int g = a*c;
-//Provides a*c of the statement "-4ac"
-int h = g*-4;
-//Provides the "-4" aspect of "-4ac" and finishes the equation
-int i = f+h;
-//subtracts -4ac from b^2 to finish the equation and prepare it for squaring
-double j = Math.sqrt(i);
-//Finds the square root of i, which is b^2-4ac
+public static void main(String args[]) {
 
-double divisor1=1;
-double divisor2=4;
-double divisor3=9;
-double divisor4=16;
-double divisor5=25;
-double divisor6=36;
-double divisor7=49;
-double divisor8=64;
-double divisor9=81;
-double divisor10=100;
-double divisor11=121;
-double divisor12=144;
-double divisor13=169;
-double divisor14=196;
+Scanner sc = new Scanner(System.in);
+        System.out.println("How many variables does the equation have?");
 
-double division1=i/divisor1;
-//Divides I by 1
-double division2=i/divisor2;
-//Divides I by 4
-double division3=i/divisor3;
-//Divides I by 9
-double division4=i/divisor4;
-//Divides I by 16
-double division5=i/divisor5;
-//Divides I by 25
-double division6=i/divisor6;
-//Divides I by 36
-double division7=i/divisor7;
-//Divides I by 49
-double division8=i/divisor8;
-//Divides I by 64
-double division9=i/divisor9;
-//Divides I by 81
-double division10=i/divisor10;
-//Divides I by 100
-double division11=i/divisor11;
-//Divides I by 121
-double division12=i/divisor12;
-//Divides I by 144
-double division13=i/divisor13;
-//Divides I by 169
-double division14=i/divisor14;
-//Divides I by 196
+int variableDecision = sc.nextInt();
 
-System.out.println(division1+"(1) "+division2+"(2) "+division3+"(3) "+division4+"(4) "+division5+"(5) "+division6+"(6) "+division7+"(7) "+division8+"(8) "+division9+"(9) "+division10+"(10) "+division11+"(11) "+division12+"(12) "+division13+"(13) "+division10+"(14) ");
+        //Amount of variables
+        int twoVariables = 0;
+        int threeVariables = 0;
+        int fourVariables = 0;
+        int fiveVariables = 0;
+        // (X+_) _ = Number
+        switch (variableDecision){
+                case 2: twoVariables = 1;
+                break;
+                case 3: threeVariables = 1;
+                break;
+                case 4: fourVariables = 1;
+                break;
+                case 5: fiveVariables = 1;
+                break;
+        }
 
 
-//Divide dividends, if there is a remainder, don't use them.
+        int AAAAA=-5;
+        int InvertA=AAAAA*-1;
 
+        if(twoVariables == 1){
+        // Coefficients in equation
+        // from left to right
+        int coEff1=15;
+        int coEff2=15;
+        int coEff3=15;
+        System.out.println("Does this look correct? - ["+coEff1+"x^2]+["+coEff2+"x]+["+coEff3+"]");
 
-System.out.println("{"+e+"+-"+"sqrt["+f+"-4"+"("+a+")*"+"("+c+")]}/"+d);
-System.out.println("["+e+"+-"+"sqrt("+f+"+"+
-"{"+h+"})]/"+d);
-System.out.println("["+e+"+-"+"sqrt("+i+")]/"+d);
-if(j % 2 == 0){
-    System.out.println("["+e+"+-"+j+"]/"+d);
-    System.out.println("("+e+"+"+j+")/"+d);
-    System.out.println("("+e+"-"+j+")/"+d);
-}else{
-    if(division1%2==0){
-    System.out.println("This equation can be written as the following - ("+division1+")sqrt(1)");
-    }
-    if(division2%2==0){
-    System.out.println("This equation can be written as the following - ("+division2+")sqrt(2)");
-    }
-    if(division3%2==0){
-    System.out.println("This equation can be written as the following - ("+division3+")sqrt(3)");
-    }
-    if(division4%2==0){
-    System.out.println("This equation can be written as the following - ("+division4+")sqrt(4)");
-    }
-    if(division5%2==0){
-    System.out.println("This equation can be written as the following - ("+division5+")sqrt(5)");
-    }
-    if(division6%2==0){
-    System.out.println("This equation can be written as the following - ("+division6+")sqrt(6)");
-    }
-    if(division7%2==0){
-    System.out.println("This equation can be written as the following - ("+division7+")sqrt(7)");
-    }
-    if(division8%2==0){
-    System.out.println("This equation can be written as the following - ("+division8+")sqrt(8)");
-    }
-    if(division9%2==0){
-    System.out.println("This equation can be written as the following - ("+division9+")sqrt(9)");
-    }
-    if(division10%2==0){
-    System.out.println("This equation can be written as the following - ("+division10+")sqrt(10)");
-    }
-    if(division11%2==0){
-    System.out.println("This equation can be written as the following - ("+division11+")sqrt(11)");
-    }
-    if(division12%2==0){
-    System.out.println("This equation can be written as the following - ("+division12+")sqrt(12)");
-    }
-    if(division13%2==0){
-    System.out.println("This equation can be written as the following - ("+division13+")sqrt(13)");
-    }
-    if(division14%2==0){
-    System.out.println("This equation can be written as the following - ("+division14+")sqrt(14)");
-    }
-System.out.println("If nothing has appeared other than the standard calculations, this equation cannot yet be solved by the calculator, or is impossible for Java to calculate properly.");
-}
+        int Multi1=InvertA*coEff1;
+        int Sub1=coEff2+Multi1;
+        int Multi2=Sub1*InvertA;
+        int Sub2=coEff3+Multi2;
+        if(AAAAA>0){
+
+        System.out.println("The final answer to this equation is ["+coEff1+"x]+["+Sub1+"] with a remainder of ["+Sub2+"]/(x+"+AAAAA+")");
+        }
+        if(AAAAA<0){
+        System.out.println("The final answer to this equation is ["+coEff1+"x]+["+Sub1+"] with a remainder of ["+Sub2+"]/(x"+AAAAA+")");
+        }
+        }
+        if(threeVariables == 1){
+        // Coefficients in equation
+        // from left to right
+        int coEff1=15;
+        int coEff2=15;
+        int coEff3=15;
+        int coEff4=15;
+        System.out.println("Does this look correct? - ["+coEff1+"x^3]+["+coEff2+"x^2]+["+coEff3+"x]+["+coEff4+"]");
+
+        int Multi1=InvertA*coEff1;
+        int Sub1=coEff2+Multi1;
+        int Multi2=Sub1*InvertA;
+        int Sub2=coEff3+Multi2;
+        int Multi3=Sub2*InvertA;
+        int Sub3=coEff4+Multi3;
+
+        if(AAAAA>0){
+        System.out.println("The final answer to this equation is ["+coEff1+"x^3]+["+Sub1+"x^2]+["+Sub2+"x] with a remainder of ["+Sub3+"]/(x+"+AAAAA+")");
+        }
+        if(AAAAA<0){
+        System.out.println("The final answer to this equation is ["+coEff1+"x^3]+["+Sub1+"x^2]+["+Sub2+"x] with a remainder of ["+Sub3+"]/(x"+AAAAA+")");
+        }
+        }
+
+        if(fourVariables == 1){
+        // Coefficients in equation
+        // from left to right
+        int coEff1=15;
+        int coEff2=15;
+        int coEff3=15;
+        int coEff4=15;
+        int coEff5=15;
+        System.out.println("Does this look correct? - ["+coEff1+"x^4]+["+coEff2+"x^3]+["+coEff3+"x^2]+["+coEff4+"x]+["+coEff5+"]");
+
+        int Multi1=InvertA*coEff1;
+        int Sub1=coEff2+Multi1;
+        int Multi2=Sub1*InvertA;
+        int Sub2=coEff3+Multi2;
+        int Multi3=Sub2*InvertA;
+        int Sub3=coEff4+Multi3;
+        int Multi4=Sub3*InvertA;
+        int Sub4=coEff5+Multi4;
+
+        if(AAAAA>0){
+        System.out.println("The final answer to this equation is ["+coEff1+"x^3]+["+Sub1+"x^2]+["+Sub2+"x]+["+Sub3+"] with a remainder of ["+Sub4+"]/(x+"+AAAAA+")");
+        }
+        if(AAAAA<0){
+        System.out.println("The final answer to this equation is ["+coEff1+"x^3]+["+Sub1+"x^2]+["+Sub2+"x]+["+Sub3+"] with a remainder of ["+Sub4+"]/(x"+AAAAA+")");
+        }
+        }
+
+        if(fiveVariables == 1){
+        // Coefficients in equation
+        // from left to right
+        int coEff1=15;
+        int coEff2=15;
+        int coEff3=15;
+        int coEff4=15;
+        int coEff5=15;
+        int coEff6=15;
+        System.out.println("Does this look correct? - ["+coEff1+"x^5]+["+coEff2+"x^4]+["+coEff3+"x^3]+["+coEff4+"x^2]+["+coEff5+"x]+["+coEff6+"]");
+
+        int Multi1=InvertA*coEff1;
+        int Sub1=coEff2+Multi1;
+        int Multi2=Sub1*InvertA;
+        int Sub2=coEff3+Multi2;
+        int Multi3=Sub2*InvertA;
+        int Sub3=coEff4+Multi3;
+        int Multi4=Sub3*InvertA;
+        int Sub4=coEff5+Multi4;
+        int Multi5=Sub4+InvertA;
+        int Sub5=coEff6+Multi5;
+
+        if(AAAAA>0){
+        System.out.println("The final answer to this equation is ["+coEff1+"x^4]+["+Sub1+"x^3]+["+Sub2+"x^2]+["+Sub3+"x]+["+Sub4+"] with a remainder of ["+Sub5+"]/(x+"+AAAAA+")");
+        }
+        if(AAAAA<0){
+        System.out.println("The final answer to this equation is ["+coEff1+"x^4]+["+Sub1+"x^3]+["+Sub2+"x^2]+["+Sub3+"x]+["+Sub4+"] with a remainder of ["+Sub5+"]/(x"+AAAAA+")");
+            }
+        }
     }
 }
